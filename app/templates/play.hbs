@@ -1,0 +1,7 @@
+<h3>list</h3>
+{{#each keyValuePairs as |kvp|}}
+{{kvp.name}}: {{kvp.value}}
+{{/each}}
+{{#each model as |container|}}
+{{uicontainer-node node=container followLinkAction='followLink' keyValuePair=keyValuePairs}}
+{{/each}}
